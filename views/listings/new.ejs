@@ -1,0 +1,43 @@
+<% layout("/layouts/boilerplate") %>
+<div class="row">
+  <div class="col-8 offset-2">
+    <h3 class="text-center">Create a new listing</h3>
+    <form method="POST" action="/listings" data-bs-validate novalidate>
+      <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input id="title" name="list[title]" placeholder="Listing title" type="text" class="form-control" required>
+        <div class="invalid-feedback">Please enter a title.</div>
+      </div>
+      <div class="mb-3">
+        <label for="desc" class="form-label">Description</label>
+        <textarea id="desc" name="list[description]" placeholder="Listing description" class="form-control" required></textarea>
+        <div class="invalid-feedback">Please enter a description.</div>
+      </div>
+      <div class="mb-3">
+        <label for="image-name" class="form-label">Image name</label>
+        <input id="image-name" name="list[image][filename]" placeholder="Listing image name" class="form-control">
+      </div>
+      <div class="mb-3">
+        <label for="image-url" class="form-label">Image URL</label>
+        <input id="image-url" name="list[image][url]" type="url" placeholder="Listing image url" class="form-control">
+      </div>
+      <div class="mb-3">
+        <label for="price" class="form-label">Price</label>
+        <input id="price" name="list[price]" type="number" min="0" placeholder="Listing price" class="form-control" required>
+        <div class="invalid-feedback">Please enter a Price.</div>
+      </div>
+      <div class="mb-3">
+        <label for="country" class="form-label">Country</label>
+        <input id="country" name="list[country]" placeholder="Listing country" class="form-control" required>
+        <div class="invalid-feedback">Please enter a country.</div>
+      </div>
+      <div class="mb-3">
+        <label for="location" class="form-label">Location</label>
+        <input id="location" name="list[location]" placeholder="Listing location" class="form-control" required>
+        <div class="invalid-feedback">Please enter a location.</div>
+      </div>
+      <button class="btn btn-dark">Add</button>
+    </form>
+    <script src="/js/script.js"></script>
+  </div>
+</div>

@@ -1,0 +1,170 @@
+/* Brand heading section */
+.outer {
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+/* Wayfare heading */
+.outer h1 {
+    display: inline-block !important;
+    text-align: center;
+    color: #222222;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 1.2rem 0 0;
+    line-height: 1.2;
+}
+
+/* Tagline */
+.outer h5 {
+    display: inline-block !important;
+    color: #222222;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0 0 0 0.5rem;
+}
+
+/* Add breathing room before the listings */
+main .container {
+    margin: 0 auto;
+    padding: 1rem 2rem 1rem;
+}
+body{
+    background-color: #F8F7F2;
+    display:flex;
+    flex-direction:column;
+    min-height: 100vh;
+}
+.container{
+    flex:1
+}
+.navbar{
+    background-color:#F8F7F2;
+    height: 5rem;
+}
+.fa-suitcase-rolling{
+    color:#FE424D;
+    font-size: 3rem;
+}
+.nav-link{
+    color:#222222 !important;
+    /* font-weight: bold; */
+    background-color: #F8F7F2;
+}
+.navbar-nav{
+    background-color: #F8F7F2 !important
+}
+.f-info-socials{
+    width:100%;
+    justify-content: center;
+    font-size: 1.5rem;
+    align-items: center;
+    text-align:center
+}
+.f-info-socials i{
+    margin-right: 1.2rem;
+}
+.f-info-links a{
+    text-decoration: none;
+    color:#222222;
+    align-items: center;
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+.f-info{
+    text-align: center;
+    display:flex;
+    height: 8rem;
+    background-color: #ebebeb;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.f-info-links{
+    width: 100%;
+}
+
+/* Listing cards */
+
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Listing images */
+
+.card:hover .card-img {
+    box-shadow: 0 8px 22px rgba(108, 145, 160, 0.15);
+    filter: brightness(0.96);
+}
+
+/* Card content */
+.listing-card {
+    border: none !important;
+    margin-bottom: 1rem;
+    background: transparent;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    display: block;
+}
+
+/* Listing title */
+.card-body h5 {
+    color: #080808;
+    font-size: 1.1rem;
+    font-weight: 650;
+    margin-top: 0.85rem !important;
+    transition: color 0.3s ease;
+}
+
+.card:hover .card-body h5 {
+    color: #245B70;
+}
+
+/* Price */
+.card-text {
+    color: #34434A;
+    font-size: 0.95rem;
+    font-weight: 400;
+    margin-top: 0.4rem;
+}
+
+.card-text::first-line {
+    font-weight: 600;
+}
+.listing-link{
+    text-decoration:none;
+}
+.card-img-overlay{
+    opacity:0
+}
+.card-img-overlay:hover{
+    opacity:0.2;
+    background-color:white
+}
+
+.show-img{
+    height: 40vh;
+    width: 20rem;
+    border-radius: 1rem;
+}
+.cardshow{
+    width:20rem;
+}
+.dlt{
+    background-color: red;
+    color:white
+}
+.btns{
+    display:flex;
+}
